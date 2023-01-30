@@ -1,0 +1,202 @@
+/* Reste */
+html, body, h1, p, h2, wiki, li, ul {
+    padding: 0;
+    margin: 0;
+}
+figure{
+    padding: 0;
+    margin: 0;
+    line-height: 0;
+}
+img {
+    width: 100%;
+    height: auto;
+}
+ul {
+    list-style: none;
+}
+*{box-sizing: border-box}
+/* Styles*/
+.nav {display: flex;
+
+}
+li{margin-right: 8px;}
+
+a {color: inherit;}
+
+.con {text-transform: uppercase;
+        margin: auto; /*positionierung in der Mitte*/
+        display: flex; /*positionierung nebeneinander*/ 
+    justify-content: space-between;
+    /* mobile flex-direction: column;
+    text-align: center;*/
+    width: 100%;
+    max-width: 600px;
+    mix-blend-mode: difference;
+    color: white;
+}
+
+.con li {
+    margin-right: 0
+}
+
+/* Typo */
+.mainbody {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    padding: 15px;
+    background-color: #E4E4E4;
+    background-image: url(img/bnw.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; 
+    width: 100vw;
+    height: 100vh;
+    text-decoration-color:  #121212;
+    display: flex;
+    align-items: center;
+    position:relative;
+}
+.mainbody-zwei {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    padding: 15px;
+    background-color: #E4E4E4;
+    background-image: url(img/schnee.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    text-decoration-color:  #121212;
+    display: flex;
+    align-items: center;
+    position:relative;
+    
+}
+.mainbody-impres{
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    padding: 15px;
+    background-color: #E4E4E4;
+    background-image: url(img/flug_farbe.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; 
+    width: 100vw;
+    height: 100vh;
+    text-decoration-color:  #121212;
+    display: flex;
+    align-items: center;
+    position:relative;
+    
+}
+h1 {
+    font-weight: normal;
+    font-size:1.2em; 
+    text-decoration-color:  #121212;
+    text-transform: uppercase;
+    padding-bottom: 2px;
+    
+}
+h1.zwei {
+    font-size: 2em;
+}
+
+main{position: absolute;
+    bottom: 20px;
+    left:20px;
+
+}
+.about{ 
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    padding: 15px;
+    background-color: #E4E4E4;
+    
+    
+}
+.credit {max-width: 900px
+}
+
+/* Video*/
+
+.video-box {
+    display: block;
+    width: 100%;
+    max-width: 860px;
+    margin: auto
+}
+
+.video {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 75%; 
+}
+
+
+
+.res-video{
+		position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+	}
+
+/*about*/
+.about-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+    
+}
+.inhalt {
+    max-width: 1000px;
+    padding-bottom: 20px;
+    grid-column: 1 ; 1fr;
+    padding-right: 10px;
+}
+
+.about-credit{
+    grid-column: 1 ; 1fr;
+    grid-row: 3;
+    padding-right: 10px; 
+    margin-top: 1em;
+    
+}
+
+.voiceover {   
+grid-column: 2; 1fr;
+    grid-row: 2;
+    max-width: 500px;
+}
+
+.back {
+    grid-column: 1 ; 1fr;
+    text-transform: uppercase;
+    padding-top: 20px
+}
+
+@media screen and (max-width:320px) {
+    .mainbody-zwei {
+    align-items: flex-start;
+}
+    .video-box {
+    margin: 0
+}
+}
+@media screen and (max-width:800px) {
+    .con {flex-direction: column;
+        text-align: center;
+}
+    .con li {
+        padding-top: 10px;
+    }
+    
+}    
+
+
